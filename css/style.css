@@ -122,6 +122,11 @@ select{
     font-size: small;
     justify-content: center;
 }
+.identity-job{
+    font-style: italic;
+    color: gray;
+    font-size: smaller;
+}
 .profile{
     display: flex;
     margin-top: 50px;
