@@ -89,12 +89,23 @@ select{
 .content-image span{
     color: gray;
 }
+.benefits{
+    display: flex;
+    box-sizing: border-box;
+    margin: 10px 0;
+}
 .circle{
+    box-sizing: border-box;
+    width: 10%;
     display: flex;
     justify-content: center;
     background: lightgray;
     border-radius: 50%;
     width: 1.2em;
+}
+.benefit{
+    box-sizing: border-box;
+    width: 90%;
 }
 .contact-us{
     margin-bottom: 0px;
@@ -130,4 +141,14 @@ select{
 .profile{
     display: flex;
     margin-top: 50px;
+}
+.our-products{
+    box-sizing: border-box;
+    width: 50%;
+}
+.our-package{
+    display: flex;
+    background-color: lightgray;
+    justify-content: center;
+    margin: 20px 0;   
 }
