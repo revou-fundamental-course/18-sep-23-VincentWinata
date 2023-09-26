@@ -222,4 +222,5 @@ foot{
     flex-direction: column;
     background-color: aliceblue;
     align-items: center;
+    margin-top: 50px;
 }
