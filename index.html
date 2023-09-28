@@ -1,36 +1,50 @@
 <!DOCTYPE html>
 <html lang="eng">
+
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>E-Grocery</title>
         <link rel="stylesheet" href="css/style.css">
-        <script src="js/script.js"></script>
     </head>
+
     <body>
+
         <header class="navigation">
+
             <div class="page-tittle">
                 E-Grocery
             </div>
+
             <div class="nav">
                 <a href="#title" class="nav-item">Home</a>
                 <a href="#our-package" class="nav-item">Our Package</a>
-                <a href="#foot" class="nav-item">Call Us</a>
+                <a href="#call-button" class="nav-item">Call Us</a>
             </div>
+
         </header>
+
         <main>
+
             <div id="title" class="content-tittle">
+
                 <div>
-                    <h1>Top Rated E-Groceries Shop in Indonesia</h1>
+                    <h1 class="title1">Top Rated E-Groceries Shop in Indonesia</h1>
                 </div>
+
                 <div>
-                    <span>Everything with best ingridients</span>
+                    <span class="title2">Everything with best ingridients</span>
                 </div>
+
             </div>
+
             <div id="content" class="content">
                 <div id="content-left" class="content-left">
                     <div id="content-image" class="content-image" >
-                        <img src="Assets/placeholder-image.png" alt="slider" class="image" >
+                        <img src="Assets/fresh vegetable.jpg" alt="slider" class="image active" >
+                        <img src="Assets/fruit.jpg" alt="slider" class="image">
+                        <img src="Assets/kitchen ingredients.jpg" alt="slider" class="image">
+                        <img src="Assets/kitchen set.jpg" alt="slider" class="image">
                         <span>Fresh Everyday</span>
                         <div class="profile">
                             <div class="profile-picture">
@@ -45,22 +59,30 @@
                     </div>
                 </div>
                 <div id="content-right" class="content-right">
-                    <form class="content-form">
+                    <form name="contact-form" class="content-form">
                         <div class="info-sales">
                             <h2 id="contact-us" class="contact-us">Contact Us</h2>
                             <p>Sales akan menghubungi anda 1 x 24 jam setelah data kami terima</p>
                         </div>
                         <label for="your-name">Your Name</label>
-                        <input type="text" name="your-name" placeholder="First and Last Name">
+                        <input id="your-name" type="text" name="your-name" placeholder="First and Last Name">
+                        <p id="name-error" class="error-message"></p>
 
                         <label for="email">Email Address</label>
-                        <input type="email" name="email" placeholder="example@gmail.com">
+                        <input id="email" type="email" name="email" placeholder="example@gmail.com">
+                        <p id="email-error" class="error-message"></p>
+
+                        <label for="phone-number">Phone Number</label>
+                        <input id="phone-number" type="number" name="phone-number" placeholder="08XXXXXXXX">
+                        <p id="number-error" class="error-message"></p>
+
 
                         <label for="interest">What are you interested in?</label>
                         <select type="select" name="interest">
-                            <option>Select option</option>
-                            <option></option>
+                            <option value="">Select option</option>
+                            <option value="fresh-fruit">fresh fruit</option>
                         </select>
+                        <p id="interest-error" class="error-message"></p>
                         <div id="button" type="submit" class="button">SEND</div>
                     </form>
                 </div>
@@ -96,8 +118,6 @@
                     </div>
                 </div>
             </div>
-        </main>
-        <footer>
             <div>
                 <div id="our-package" class="our-package">
                     <h1>Our Package</h1>
@@ -172,11 +192,18 @@
                         </div>
                     </div>
                 </div>
+        </main>
+        <footer>
+            <div>
+                <div> 
+                    <h3>Your Closing Argument headline</h3>
+                </div>
+                <div>
+                    <span>If you need any help dont hesitate to call us</span>
+                </div>
+            </div>
+        <div id="call-button" class="call-button">CALL TO ACTION</div>
         </footer>
+        <script src="js/script.js"></script>
     </body>
-    <foot id="foot">
-        <h1>Your Closing Argument headline</h1>
-        <p>If you need any help dont hesitate to call us</p>
-        <div id="button" class="button">CALL TO ACTION</div>
-    </foot>
 </html>

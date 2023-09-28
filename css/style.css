@@ -37,6 +37,13 @@ main{
     justify-content: center;
     align-items: center;
 }
+.content-footer{
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .content {
     display: flex;
 }
@@ -63,6 +70,26 @@ main{
     background: black;
     color: gray;
 }
+.error-message{
+    color: red;
+    font-size: 0.8em;
+    margin-top: 0;
+}
+.call-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    background: darkslategrey;
+    color: white;
+    padding: 10px 0;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.call-button:hover{
+    background: black;
+    color: gray;
+}
 .content-form {
     display: flex;
     flex-direction: column;
@@ -85,6 +112,7 @@ select{
 }
 .image{
     width: 100%;
+    display: none;
 }
 .content-image span{
     color: gray;
@@ -102,6 +130,9 @@ select{
     background: lightgray;
     border-radius: 50%;
     width: 1.2em;
+}
+.active{
+    display: block;
 }
 .benefit{
     box-sizing: border-box;
@@ -152,8 +183,8 @@ select{
 }
 .our-package{
     display: flex;
-    background-color: lightgray;
     justify-content: center;
+    background-color: lightgray;
     margin: 20px 0;   
 }
 .packages{
@@ -166,6 +197,7 @@ select{
 .our-offer{
     display: flex;
     box-sizing: border-box;
+    justify-content: center;
     width: 50%;
 }
 .symbol{
@@ -217,10 +249,52 @@ select{
     color: gray;
     margin-top: 8px;
 }
-foot{
+footer{
     display: flex;
     flex-direction: column;
     background-color: aliceblue;
     align-items: center;
+    justify-content: center;
     margin-top: 50px;
+}
+@media screen and (max-width: 767px) {
+    .nav{
+        display: none !important;
+    }
+    .content{
+        flex-direction: column;
+    }
+    .content-left{
+        width: 100%;
+    }
+    .content-right{
+        width: 100%;
+    }
+    .our-products{
+        margin-top: 30px;
+        width: 100% !important;
+    }
+    .pack{
+        flex-direction: column !important;
+    }
+    .our-offer{
+        width: 100% !important;
+    }
+    };
+
+@media screen  and (max-width: 564px){
+    .footer-title{
+        font-size: 15px !important;
+    }
+    .footer-desc{
+        font-size: 10px !important;
+    }
+}
+@media screen and (max-width: 650px) {
+    .title1 {
+        font-size: 15px; 
+    }
+    .title2 {
+        font-size: 10px;
+    }
 }
